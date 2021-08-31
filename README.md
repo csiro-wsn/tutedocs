@@ -21,10 +21,8 @@
 * Tute 3: Web Dashboard
 
 ## Boards
-How to compile for:
-* Sensors
-* Interfaces
-* Schematics
+How to compile for Sensors, Interfaces, Schematics.
+
 * Tute 1: Particle Argon
 * Tute 2: Thingy52
 * Tute 3: IOT Board
