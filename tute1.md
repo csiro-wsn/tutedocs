@@ -1,7 +1,7 @@
 # Tutorial 1: Setting up Zephyr
 
-# Background
+## Background
 
-# Steps
+## Steps
 
-# Summary
+## Summary
