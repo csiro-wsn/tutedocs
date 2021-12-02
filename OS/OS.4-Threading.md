@@ -136,7 +136,7 @@ Copy the zephyr/sample/blinky program to a working application directory, then, 
 >Question: What is wrong with an implementation like this? Why is this not ideal, what type of issues might you run into?
 
 
-## **3.1 Solution**
+## **3.1 Sample Solution**
 
 A sample solution is uploaded in the docs repository. Find located within,
 
