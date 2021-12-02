@@ -131,8 +131,26 @@ In application [2],
 
 ## **3.0 Tutorial Question:**
 
-Copy the zephyr/sample/blinky program to a working application directory, then, implement two threads, that can blink the leds at different times on the Thingy52. 
+Copy the zephyr/sample/blinky program to a working application directory, then, implement two threads, where one thread will turn on the led, and the other thread will turn off the led. Use either the thingy52 or the Arduino Sense to test your code.
 
+>Question: What is wrong with an implementation like this? Why is this not ideal, what type of issues might you run into?
+
+
+## **3.1 Solution**
+
+A sample solution is uploaded in the docs repository. Find located within,
+
+> tute_solutions/thread_tute/src/
+
+This code can be built with:
+
+> west build -p -b <board_name>
+
+and flashed with
+
+> west flash -r 'runner'
+
+Refer to the board flasing tutorials for additional build/flash guides.
 
 
 
