@@ -125,6 +125,13 @@ The option '-r' lets you specify a runner, in this case we are using JLink to fl
 If flashing fails, refer to the end of tute 1 and follow instructions for installing runners / additional runners. 
 
 
+## **4.0 Sample**
+
+A sample of this is located within
+
+> tute_solutions/blinky_tute/
+
+
 ## Links
 
 [1]https://docs.zephyrproject.org/latest/application/index.html
