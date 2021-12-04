@@ -26,6 +26,64 @@ Zephyr offer multiple synchronization primitives, such as:
 
 Refer to the API guides (links section) for detailed information on implementing each of the above. In this tute, we will explore using semaphores to syncrhonize the blinky thread created in *OS.4-Threading*. 
 
+## 2.2 Semaphore Usage
+
+Within Zephyr, a semaphore can be defined by the use of the following macro
+
+```
+K_SEM_DEFINE(sem_name, 0, 1);
+```
+
+or, using the function  *k_sem_init()*
+
+```
+struct k_sem sem_name;
+
+void
+main(void)
+{
+    k_sem_init(&sem_name, 0, 1);
+}
+```
+
+The typical application of a semaphore can be as seen below:
+
+```
+void
+interrupt_handler(void *arg)
+{
+    /* Interrupt indicative of some data ready */
+    k_sem_give(&data_ready_sem);
+}
+
+void
+consumer_thread(void)
+{
+    while(1)
+    {
+        if (k_sem_take(&data_ready_sem, K_MSEC(850) != 0)) {
+            /* 
+             * Data not received within expected timeout of 850ms, 
+             * fallback subroutine...
+             */
+             continue;
+        }
+
+        /* Semaphore was attained within time out */
+
+        /* Read the data, and do some work... */
+        k_msleep(500);
+    }
+}
+```
+The example above, shows a scenarion where a semaphore is used to signal by an interrupt handler that some data is ready. Similary, semaphores can be used between multiple threads for coordination and singalling. 
+
+Refer to [1], for additional implementation information. 
+
+## 2.3 Mutex Usage
+
+## 2.4 Condition Variable Usage
+
 ## **3.0 Tutorial Question**
 
 > 1. Use two semaphores to enforce syncrhonization between the two blinky threads created in tute OS.4-Threading.
