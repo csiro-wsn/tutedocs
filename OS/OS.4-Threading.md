@@ -140,7 +140,7 @@ Copy the zephyr/sample/blinky program to a working application directory, then, 
 
 A sample solution is uploaded in the docs repository. Find located within,
 
-> tute_solutions/thread_tute/src/
+> tute_solutions/OS4_tute/src/
 
 This code can be built with:
 
