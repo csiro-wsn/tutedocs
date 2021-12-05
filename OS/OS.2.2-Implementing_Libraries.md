@@ -1,4 +1,4 @@
-# CSSE4011: Tute 2.5 - Implementing a Simple Library
+# CSSE4011: Tute 2.2 - Implementing a Simple Library
 
 ## **1.0 Motivation**
 

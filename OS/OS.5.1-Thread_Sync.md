@@ -26,7 +26,7 @@ Zephyr offer multiple synchronization primitives, such as:
 
 Refer to the API guides (links section) for detailed information on implementing each of the above. In this tute, we will explore using semaphores to syncrhonize the blinky thread created in *OS.4-Threading*. 
 
-## 2.2 Semaphore Usage
+## 2.2 Semaphore Implementation
 
 Within Zephyr, a semaphore can be defined by the use of the following macro
 
@@ -80,9 +80,9 @@ The example above, shows a scenarion where a semaphore is used to signal by an i
 
 Refer to [1], for additional implementation information. 
 
-## 2.3 Mutex Usage
+## 2.3 Mutex Implementation
 
-## 2.4 Condition Variable Usage
+## 2.4 Condition Variable Implementation
 
 ## **3.0 Tutorial Question**
 
