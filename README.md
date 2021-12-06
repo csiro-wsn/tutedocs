@@ -18,7 +18,7 @@ A set of tutorials focused on getting upto speed with Zephyr RTOS and it's featu
 
 ## Connectivity
 
-A set of tutorials that expose connectivity/ I/O features of Zephyr RTOS
+A set of tutorials that expose connectivity / I/O features of Zephyr RTOS
 
 * Tute 1: GPIO
 * Tute 2: Sensors
