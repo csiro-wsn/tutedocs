@@ -17,7 +17,7 @@ In an embedded environment, an application might want to enforce that only one t
 
 ## 2.1 Thread Synchronization in Zephyr
 
-Zephyr offer multiple synchronization primitives, such as:
+Zephyr offers multiple synchronization primitives, such as:
 
     1. Semaphores          [1]
     2. Mutexs              [2]
@@ -82,7 +82,11 @@ Refer to [1], for additional implementation information.
 
 ## 2.3 Mutex Implementation
 
+[TODO]
+
 ## 2.4 Condition Variable Implementation
+
+[TODO]
 
 ## **3.0 Tutorial Question**
 
