@@ -82,15 +82,56 @@ Refer to [1], for additional implementation information.
 
 ## 2.3 Mutex in Zephyr
 
-A mutex in Zephyr RTOS is a kernel object that implements the traditional functionality of a mutex. A mutex can allow multiple threads to safely access and share hardware or software resources [2]. Where a semaphore **may allow finite access** (i.e counting semaphore) to a resource, mutexs only allow a threads to access one resource at a time (a locking mechanism). 
+A mutex in Zephyr RTOS is a kernel object that implements the traditional functionality of a mutex. A mutex can allow multiple threads to safely access and share hardware or software resources [2]. Where a semaphore **may allow finite access** (i.e counting semaphore) to a resource, mutexs only allow a thread to access one resource at a time (a locking mechanism). 
 
 The mutex implementation api within Zephyr is functionally similar to that of the semaphore api outlined in ***section 2.2***. See [2] for Zephyr mutex api reference.
 
 ## 2.4 Condition Variables in Zephyr
 
-Zephyr allows for 'Condition Variables' to be used as a synchronization primitive, where, threads can wait until a particular condition has occured. 
+Zephyr allows for 'Condition Variables' to be used as a synchronization primitive, where, threads can wait on until a particular condition has occured. Waiting threads will be in a queue when a particular state of execution is not desired (by waiting on the condition).
 
-**[TODO]**
+
+Zephyr API [3] shows the following example to be  a typical conditional variable implementation with two threads. In the ***main*** thread, 
+
+```
+K_MUTEX_DEFINE(mutex);
+K_CONDVAR_DEFINE(condvar)
+
+void main(void)
+{
+    k_mutex_lock(&mutex, K_FOREVER);
+
+    /* block this thread until another thread signals cond. While
+     * blocked, the mutex is released, then re-acquired before this
+     * thread is woken up and the call returns.
+     */
+    k_condvar_wait(&condvar, &mutex, K_FOREVER);
+    ...
+    k_mutex_unlock(&mutex);
+}
+```
+and in the ***worker*** thread,
+
+```
+void worker_thread(void)
+{
+    k_mutex_lock(&mutex, K_FOREVER);
+
+    /*
+     * Do some work and fullfill the condition
+     */
+    ...
+    ...
+    k_condvar_signal(&condvar);
+    k_mutex_unlock(&mutex);
+}
+```
+
+### 2.4.1 Condition Variable Typical Use
+
+Condition variables should be used with a mutex to signal changing conditions/states from one thread to another. Condition variables are not ***events*** in that they are not the ***condition*** itself.
+
+**Refer to the implementation API [3] for more details.**
 
 ## **3.0 Tutorial Question**
 
