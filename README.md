@@ -20,11 +20,11 @@ A set of tutorials focused on getting upto speed with Zephyr RTOS and it's featu
 
 A set of tutorials that expose connectivity / I/O features of Zephyr RTOS
 
-* Tute 1: GPIO              ```[DRAFT]```
-* Tute 2: Sensors           ```[DRAFT]```
-* Tute 3: Serial Output     ```[DRAFT]```
-* Tute 4: Shell             ```[DRAFT]```
-* Tute 5: Logging           ```[DRAFT]```
+* Tute 1: GPIO                        ```[DRAFT]```
+* Tute 2: Sensors                     ```[DRAFT]```
+* Tute 3: Serial Output               ```[DRAFT]```
+* Tute 4: Shell                       ```[DRAFT]```
+* Tute 5: Logging                     ```[DRAFT]```
 
 ## Networking
 
@@ -38,7 +38,7 @@ The following set of tutorials will focus on introducing networking within Zephy
 
 A step-by-step guide to building Zephyr applications for the following boards, that are to be used within the course. 
 
-* Tute 1: Particle Argon
-* Tute 2: Thingy52
-* Tute 3: IOT Board
+* Tute 1: Arduino Sense             ```[REVIEW]```
+* Tute 2: Thingy52                  ```[DRAFT]```
+* Tute 3: IOT Board                 ```[DRAFT]```
 
