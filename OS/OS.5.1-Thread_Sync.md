@@ -76,17 +76,21 @@ consumer_thread(void)
     }
 }
 ```
-The example above, shows a scenarion where a semaphore is used to signal by an interrupt handler that some data is ready. Similary, semaphores can be used between multiple threads for coordination and singalling. 
+The example above, shows a scenarion where a semaphore is used to signal by an interrupt handler that some data is ready. Similary, semaphores can be used between multiple threads for coordination and signaling. 
 
 Refer to [1], for additional implementation information. 
 
-## 2.3 Mutex Implementation
+## 2.3 Mutex in Zephyr
 
-[TODO]
+A mutex in Zephyr RTOS is a kernel object that implements the traditional functionality of a mutex. A mutex can allow multiple threads to safely access and share hardware or software resources [2]. Where a semaphore **may allow finite access** (i.e counting semaphore) to a resource, mutexs only allow a threads to access one resource at a time (a locking mechanism). 
 
-## 2.4 Condition Variable Implementation
+The mutex implementation api within Zephyr is functionally similar to that of the semaphore api outlined in ***section 2.2***. See [2] for Zephyr mutex api reference.
 
-[TODO]
+## 2.4 Condition Variables in Zephyr
+
+Zephyr allows for 'Condition Variables' to be used as a synchronization primitive, where, threads can wait until a particular condition has occured. 
+
+**[TODO]**
 
 ## **3.0 Tutorial Question**
 
