@@ -4,15 +4,15 @@
 
 A set of tutorials focused on getting upto speed with Zephyr RTOS and it's featureset/implementation.
 
-* Tute 1: Getting Started               [REVIEW]
-* Tute 2: First program                 [REVIEW]
-  * 2.1: Building Tips                  [REVIEW]
-  * 2.2: Implementing Libraries         [REVIEW]
+* Tute 1: Getting Started               ```[REVIEW]```
+* Tute 2: First program                 ```[REVIEW]```
+  * 2.1: Building Tips                  ```[REVIEW]```
+  * 2.2: Implementing Libraries         ```[REVIEW]```
 * Tute 3: Debugger
-* Tute 4: Threading                     [REVIEW]
+* Tute 4: Threading                     ```[REVIEW]```
 * Tute 5: Thread Synchronisation        
-  * 5.1: Thread Sync                    [REVIEW]
-  * 5.2: Thread Communications (ITC)    [DRAFT]
+  * 5.1: Thread Sync                    ```[REVIEW]```
+  * 5.2: Thread Communications (ITC)    ```[DRAFT]```
 * Tute 6: Kernel Control 
 * Tute 7: File Systems
 
@@ -20,10 +20,11 @@ A set of tutorials focused on getting upto speed with Zephyr RTOS and it's featu
 
 A set of tutorials that expose connectivity / I/O features of Zephyr RTOS
 
-* Tute 1: GPIO
-* Tute 2: Sensors
-* Tute 3: Serial Output
-* Tute 4: Shell
+* Tute 1: GPIO              ```[DRAFT]```
+* Tute 2: Sensors           ```[DRAFT]```
+* Tute 3: Serial Output     ```[DRAFT]```
+* Tute 4: Shell             ```[DRAFT]```
+* Tute 5: Logging           ```[DRAFT]```
 
 ## Networking
 
