@@ -179,7 +179,9 @@ Hello World
 
 ## **2.6 Sample Application**
 
-A sample application has been provided for your convenience.  
+A sample application has been provided, this application includes all the steps mentioned above. You can test the console by flashing it to the Arduino Sense Board.
+
+Sample is located in **REPO_TOP/tute_soltions/console_example/**
 
 # Links 
 [1] https://docs.zephyrproject.org/latest/reference/usb/uds_cdc_acm.html 
