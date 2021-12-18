@@ -185,5 +185,7 @@ Sample is located in **REPO_TOP/tute_soltions/console_example/**
 
 # Links 
 [1] https://docs.zephyrproject.org/latest/reference/usb/uds_cdc_acm.html 
+
 [2] https://docs.zephyrproject.org/latest/reference/devicetree/api.html 
+
 [3] https://docs.zephyrproject.org/latest/guides/dts/howtos.html 
