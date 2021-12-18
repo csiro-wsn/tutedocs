@@ -75,7 +75,7 @@ CONFIG_USB_DEVICE_PID=0x4011
 ```
 ### **2.3 Setting up CDC-ACM [app.overlay]**
 
-Zephyr v2.7 require an overlay file to be added to specify Communication Device Class - Abstract Control Model (CDC-ACM). The CDC ACM can be use as backends for Zephyr Subsystems, such as console and shell. 
+Zephyr v2.7 require an overlay file to be added to specify Communication Device Class - Abstract Control Model (CDC-ACM). The CDC ACM can be used as backends for Zephyr Subsystems, such as console and shell. 
 
 There is detailed information about how an overlay is implemented and it's purpose in this sub-system which can be found here [1]. 
 
