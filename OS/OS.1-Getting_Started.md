@@ -48,16 +48,16 @@ Take some time to read through these documents to get an idea of how Zephyr is i
 The following guide is made in reference to the Zephyr "Getting Started Guide" documentation [1], and is intended to be used on a Debian based linux distribution with the **"apt"** (package mananger installed). 
 
 1.0 **First update the system and any installed packages on your VM**
-```
+```shell
     sudo apt update 
     sudo apt full-upgrade
 ```
 1.1 Reboot (If this was a fresh OS install)
-```
+```shell
     sudo reboot
 ```
 2.0 **Update sources list by adding the Kitware APT repo (contains cmake etc...)**
-```
+```shell
     cd ~  
 
     wget https://apt.kitware.com/kitware-archive.sh
@@ -65,21 +65,21 @@ The following guide is made in reference to the Zephyr "Getting Started Guide" d
     sudo rm bash kitware-archive.sh                                   - Remove script
 ```
 2.1 Install cmake, python3 and dtc (device tree compiler)
-```
+```shell
     sudo apt install --no-install-recommends git cmake ninja-build gperf \
         ccache dfu-util device-tree-compiler wget \
         python3-dev python3-pip python3-setuptools python3-tk python3-wheel xz-utils file \
         make gcc gcc-multilib g++-multilib libsdl2-dev
 ```
 2.2 Verify dependencies are installed before continuing
-```
+```shell
     cmake --version
     python3 --version
     dtc --version
 ```
 **3.0 Get Zephyr and Install Python dependencies**
 3.1 Install West (Zephyr Meta-tool)
-```
+```shell
     pip3 install --user -U west
 
     echo 'export PATH=~/.local/bin:"$PATH"' >> ~/.bashrc
@@ -98,16 +98,16 @@ The following guide is made in reference to the Zephyr "Getting Started Guide" d
     west init zephyrproject/                    - Latest version of Zephyr (the development tree, might be unstable)
 ```
 3.3 Get Zephyr Source Code (Gets ALL of the source)
-```
+```shell
     cd ~/zephyrproject
     west update                                 - Might take awhile 
 ```
 3.4 Export a Zephyr CMake package. This allows CMake to automatically load boilerplate code required for building Zephyr applications.
-```
+```shell
     west zephyr-export
 ```
 3.5 Zephyr’s scripts/requirements.txt file declares additional Python dependencies. Install them with pip3.
-```
+```shell
     pip3 install --user -r ~/csse4011/zephyrproject/zephyr/scripts/requirements.txt
 ```
 4.0 **Installing the toolchains**
@@ -115,26 +115,26 @@ The following guide is made in reference to the Zephyr "Getting Started Guide" d
 This tutorial will focus on installing the Zephyr SDK. You may also use 3rd party toolchains, however, for this course, the SDK will be sufficient. Note that Zephyr SDK is not available of Windows or MacOs. You will need to install a 3rd party toolchain, see here [2].
 
 4.1 Download the Zephyr SDK installer
-```
+```shell
     cd ~
 
     wget https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.13.2/zephyr-sdk-0.13.2-linux-x86_64-setup.run
 ```
 4.2 Install the SDK to /opt/ , see [1] for other potential installation locations
-```
+```shell
     chmod +x zephyr-sdk-0.13.2-linux-x86_64-setup.run
 
     sudo ./zephyr-sdk-0.13.2-linux-x86_64-setup.run -- -d /opt/zephyr-sdk-0.13.2
 ```
 
 4.3 Remove SDK Installer (Optional)
-```
+```shell
     cd ~
     rm zephyr-sdk-0.13.2-linux-x86_64-setup.run
 ```
 
 5.0 Set udev rules, which allow you to flash most Zephyr boards as a regular user
-```
+```shell
     sudo cp /opt/zephyr-sdk-0.13.2/sysroots/x86_64-pokysdk-linux/usr/share/openocd/contrib/60-openocd.rules /etc/udev/rules.d
 
     sudo udevadm control --reload
@@ -145,14 +145,14 @@ This tutorial will focus on installing the Zephyr SDK. You may also use 3rd part
 If the installation was successful, we should now be able to build a basic blinkly program. In the following command, the '-p auto' option automatically cleans byproducts from a previous build if necessary, which is useful if you try building another sample.
 
 The '-b' option specifies a board to build for, in this case the particle_boron, followed by the path to source.
-```
+```shell
     cd ~/zephyrproject/zephyr
 
     west build -p auto -b particle_argon samples/basic/blinky
 ```
 
 6.1 Flash the sample program. Make a sure a 'runner' is connected. You will be given a Segger J-Link device to be used with the Particle Argon.
-```
+```shell
     west flash -r jlink
 ```
 
@@ -161,7 +161,7 @@ Option '-r' specifies to flash using JLink, west is capable of tapping into diff
 6.2 If flashing fails, a runner may need to be installed. When using a Segger J-Link Device. Download and install the following JLink Software [9]. Under 'J-Link Software and Documentation Pack', download the 'Linux - 64-bit DEB Installer'. Run the installer and install JLink software.
 
 Installation can be verified by running the following command from a terminal
-```
+```shell
     JLinkExe
 
     exit 

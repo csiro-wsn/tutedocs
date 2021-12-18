@@ -20,16 +20,16 @@ The bossac can be setup in a few different ways, the easiest is to clone the app
 In the csse4011-vm, after completing the getting started guide, perform the following.
 
 Step 1: Install Dependencies
-```
+```shell
 sudo apt-get install libreadline-dev libwxgtk3.0-gtk3-dev
 ```
 Step 2: Clone BOSSA
-```
+```shell
 cd csse4011/
 git clone https://github.com/arduino/BOSSA.git
 ```
 Step 3: Make Bossa
-```
+```shell
 cd BOSSA/
 make
 ```
@@ -40,7 +40,7 @@ Step 4: Verify that bin/ has been succefully created with a binary named 'bossac
 
 To allow for west to load binary into bootloader, tty permissions must be given to the user. An easy way to do this is to add the current user to the 'dialout' group.
 
-```
+```shell
 sudo usermod -a -G dialout $USER
 ```
 
@@ -52,12 +52,12 @@ Ensure that the USB is connected to the Arduino Sense board, and that **it is pa
 
 An application for this board can be built with, (from within Zephyr Application directory - see OS.1)
 
-```
+```shell
 west  build -p auto -b arduino_nano_33_ble
 ```
 and flashed with
 
-```
+```shell
 west flash --bossac=$HOME/csse4011/BOSSA/BOSSA/bin/bossac
 ```
 

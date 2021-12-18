@@ -61,7 +61,7 @@ In this course, you will be required to modify and re-use code to implement new 
 ## **3.0 Making A Zephyr Application**
 
 3.1 Within the 'csse4011_repo', make the following modifications to setup a sample directory
-```
+```shell
     cd ~/csse4011/csse4011_repo/
     mkdir -p apps/sample
 ```
@@ -70,11 +70,11 @@ In this course, you will be required to modify and re-use code to implement new 
 
 Start by navigating to the Zephyr source we attained in Tute 1.
 
-```
+```shell
     cd ~/csse4011/zephyrproject/zephyr/samples/basic/blinky
 ```
 3.3 Copy blinky files into our sample application directory, then navigate to sample directory.
-```
+```shell
     cp -R * ~/csse4011/csse4011_repo/apps/sample/
 
     cd ~/csse4011/csse4011_repo/apps/sample/
@@ -101,7 +101,7 @@ Start by navigating to the Zephyr source we attained in Tute 1.
 save and exit.
 
 3.6 Read and execute bashrc (Loads ZEPHYR_BASE for current shell instance)
-```
+```shell
     source ~/.bashrc
 
     echo $ZEPHYR_BASE
@@ -109,14 +109,14 @@ save and exit.
 Should now display the path to zephyr base. 
 
 3.7 Build the sample application within our directory
-```
+```shell
     cd ~/csse4011/csse4011_repo/apps/sample/
 
     west build -p auto -b particle_argon
 ```
 
 3.8 Flash and Verify that Blinky works. 
-```
+```shell
     west flash -r jlink
 ```
 
