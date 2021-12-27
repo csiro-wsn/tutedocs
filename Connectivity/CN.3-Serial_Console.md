@@ -19,7 +19,7 @@ This implementation will explore setting up the console on the Arduino Sense boa
 
 ## 1.2. Prerequisites
 
-Ensure that you have completed the following tutorials. 
+Ensure that you have completed/understand the following tutorials. 
 > OS.1, OS.2, OS.2.1 and BRD.1
 
 ## **2.0 Setting up Console**
@@ -45,10 +45,10 @@ For setting up a basic boilerplate for our application, we will use the provided
 
 ### **2.2 Enable USB Drivers [prj.conf]**
 
-To enable the existing USB drivers, a few config options need to added to our project. A detailed guide for the USB API is found [1], which you may need to refer to for additional information. 
+To enable the existing USB drivers, a few config options need to be added to our project. A detailed guide for the USB API is found [1], which you may need to refer to for additional information. 
 
 
-Start by editing the **prj.conf** file. Append the following config options. 
+Start by editing the **prj.conf** file. Append the following config options. These options can be found here [4], for diffrent subsystems. 
 ```
 CONFIG_GPIO=y
 
@@ -189,3 +189,5 @@ Sample is located in **REPO_TOP/tute_soltions/console_example/**
 [2] https://docs.zephyrproject.org/latest/reference/devicetree/api.html 
 
 [3] https://docs.zephyrproject.org/latest/guides/dts/howtos.html 
+
+[4] https://docs.zephyrproject.org/latest/reference/kconfig/index.html
