@@ -12,9 +12,9 @@ A set of tutorials focused on getting upto speed with Zephyr RTOS and it's featu
 * Tute 4: Threading                     ```[REVIEW]```
 * Tute 5: Thread Synchronisation        
   * 5.1: Thread Sync                    ```[REVIEW]```
-  * 5.2: Thread Communications (ITC)    ```[DRAFT]```
-* Tute 6: Kernel Control 
-* Tute 7: File Systems
+  * 5.2: Thread Communications (ITC)    ```[REVIEW]```
+* Tute 6: Kernel Control                ```[DRAFT]```
+* Tute 7: File Systems                  ```[DRAFT]```
 
 ## Connectivity
 
@@ -30,9 +30,9 @@ A set of tutorials that expose connectivity / I/O features of Zephyr RTOS
 
 The following set of tutorials will focus on introducing networking within Zephyr RTOS.
 
-* Tute 1: BLE
-* Tute 2: Lorawan
-* Tute 3: Web Dashboard
+* Tute 1: BLE                         ```[DRAFT]```
+* Tute 2: Lorawan                     ```[DRAFT]```
+* Tute 3: Web Dashboard               ```[DRAFT]```
 
 ## Boards
 
