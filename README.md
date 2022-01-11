@@ -24,6 +24,7 @@ A set of tutorials that expose connectivity / I/O features of Zephyr RTOS
 * Tute 2: Sensors                     ```[DRAFT]```
 * Tute 3: Serial Console              ```[REVIEW]```
 * Tute 4: Shell                       ```[REVIEW]```
+  * Tute 4.1: Shell Commands          ```[DRAFT]```
 * Tute 5: Logging                     ```[REVIEW]```
 
 ## Networking
