@@ -13,8 +13,7 @@ A set of tutorials focused on getting upto speed with Zephyr RTOS and it's featu
 * Tute 5: Thread Synchronisation        
   * 5.1: Thread Sync                    ```[REVIEW]```
   * 5.2: Thread Communications (ITC)    ```[REVIEW]```
-* Tute 6: Kernel Control                ```[DRAFT]```
-* Tute 7: File Systems                  ```[DRAFT]```
+* Tute 6: File Systems                  ```[DRAFT]```
 
 ## Connectivity
 
