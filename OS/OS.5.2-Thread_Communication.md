@@ -35,7 +35,7 @@ What is a message queue?
 * "*A message queue is a kernel object that implements a simple message queue, allowing threads and ISRs to **asynchronously** send and receive fixed-size data items*."
 
 
-##** 2.3 Implementing Message Queues**
+## **2.3 Implementing Message Queues**
 
 Start by making a basic Zephyr application, you may use a copy of the sample solution provided in CN.4-Shell (*shell_example*) and use this as a boilerplate. The provided solution has USB-Shell and USB-Printk enabled. 
 
