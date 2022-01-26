@@ -15,7 +15,7 @@ We will build on the blinky sample that was created in *OS.2-First_Program*. We 
 
 The following directory structure will be implemented for this basic library application. Where, *blinky_tute_ext* is a copy of the application made in *OS.2-First_Program*. 
 
-```
+```shell
 .
 ├── blinky_tute
 │   ├── CMakeLists.txt
@@ -115,11 +115,11 @@ Now you can call the library functions as desired.
 
 ## **3.0 Tutorial Question**
 Using the above, extend the blinky program by implementing simple wrapper functions to:
-> Init led gpio pin
+* Init led gpio pin
 
-> Power on/off led0 pin
+* Power on/off led0 pin
 
-> Deinit led gpio pin
+* Deinit led gpio pin
 
 Refer to the Zephyr GPIO API [4]
 
