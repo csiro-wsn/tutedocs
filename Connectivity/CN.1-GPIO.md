@@ -47,7 +47,7 @@ cd ~/csse4011/csse4011_repo/apps/gpio_sample/
 "A devicetree is a hierarchical data structure that describes hardware...Zephyr uses devicetree to describe the hardware available on its Supported Boards, as well as that hardware’s initial configuration."
 ```
 
-An extentsive guide to DeviceTree (DTC) implementation can be found here [1] & [2]. Later in this course, you might need to describe hardware in a DTC overlay file and add it to the build system for Zephyr to access particular hardware that you may need to use. Adding DTC overlays has been covered in *OS.2.1-Building_Tips*. 
+An extentsive guide to DeviceTree (DTC) implementation can be found here [1] & [2]. Later in this course, you might need to describe hardware in a DTC overlay file and add it to the build system for Zephyr to access particular hardware that you may need to use. Adding DTC overlays has been covered in `OS.2.1-Building_Tips`. 
 
 When an application is built for a particular board, Zephyr creates a final `zephyr.dts` file in the build directory. This file concatenates all selected hardware into this "final devicetree". Typically, it's a good idea to start here to see what the hardware description looks like for the current configuration of your build.
 
@@ -67,7 +67,9 @@ In this tutorial, we are interested in GPIO, so we will look at how to toggle a 
 
 ### **2.2 GPIO Interaction**
 
-If you have read through the blinky sample that we use as boilerplate, you may have already noticed that to toggle the led, it uses the `device-tree macros` from within the `main.c` file. 
+Typically, when you interact with new hardware, you must first enable the kernel driver for it, this is usually done using a kernel configuration file (KConfig). In our case for GPIO, it is enabled in the `prj.conf` file in the application directory with `CONFIG_GPIO=y`. Most boards will typically have basic hardware functionality like gpio, uart and i2c enabled by default in the board definitions (in the Zephyr source). You can refer to `OS.2.1-Building_Tips` for a guide on adding segmented KConf files to the build system. 
+
+If you have already read through the blinky sample that we use as boilerplate, you may have already noticed that to toggle the led, it uses the `device-tree macros` from within the `main.c` file. 
 
 For example,
 ```
