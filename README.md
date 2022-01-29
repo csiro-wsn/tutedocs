@@ -19,7 +19,7 @@ A set of tutorials focused on getting upto speed with Zephyr RTOS and it's featu
 
 A set of tutorials that expose connectivity / I/O features of Zephyr RTOS
 
-* Tute 1: GPIO                        ```[DRAFT]```
+* Tute 1: GPIO                        ```[REVIEW]```
 * Tute 2: Sensors                     ```[DRAFT]```
 * Tute 3: Serial Console              ```[REVIEW]```
 * Tute 4: Shell                       ```[REVIEW]```
