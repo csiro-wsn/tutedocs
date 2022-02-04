@@ -47,7 +47,7 @@ cd ~/csse4011/csse4011_repo/apps/gpio_sample/
 "A devicetree is a hierarchical data structure that describes hardware...Zephyr uses devicetree to describe the hardware available on its Supported Boards, as well as that hardware’s initial configuration."
 ```
 
-An extentsive guide to DeviceTree (DTC) implementation can be found here [1] & [2]. Later in this course, you might need to describe hardware in a DTC overlay file and add it to the build system for Zephyr to access particular hardware that you may need to use. Adding DTC overlays has been covered in `OS.2.1-Building_Tips`. 
+An extensive guide to DeviceTree (DTC) implementation can be found here [1] & [2]. Later in this course, you might need to describe hardware in a DTC overlay file and add it to the build system for Zephyr to access particular hardware that you may need to use. Adding DTC overlays has been covered in `OS.2.1-Building_Tips`. 
 
 When an application is built for a particular board, Zephyr creates a final `zephyr.dts` file in the build directory. This file concatenates all selected hardware into this "final devicetree". Typically, it's a good idea to start here to see what the hardware description looks like for the current configuration of your build.
 
@@ -86,7 +86,7 @@ Here, `DT_ALIAS()` is used to find the reference `led0` within the DTC. This is 
 When you follow the `led0` alias in `zephyr.dts`, you will notice that it simply maps to a GPIO pin. Aliases can help abstract the hardware within the devicetree and make them easy to access. 
 
 ### **2.4 DeviceTree GPIO Access**
-Lets investigate toggling a particular GPIO that is not aliased. We will use the `Arduino_Nano_Sense` for this tute. You can find the board pinout here [4]. We will use the GPIO pin `P0.13` (internally conencted to the top left led) for this. This pin maps on `P0`, in the `zephyr.dts` this is `gpio0`. For instance, pin `D6`, will be in `gpio1`. 
+Lets investigate toggling a particular GPIO that is not aliased. We will use the `Arduino_Nano_Sense` for this tute. You can find the board pinout here [4]. We will use the GPIO pin `P0.13` (internally connected to the top left led) for this. This pin maps on `P0`, in the `zephyr.dts` this is `gpio0`. For instance, pin `D6`, will be in `gpio1`. 
 
 
 Start by editing the source file and append the following

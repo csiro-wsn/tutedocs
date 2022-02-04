@@ -48,7 +48,7 @@ For setting up a basic boilerplate for our application, we will use the provided
 To enable the existing USB drivers, a few config options need to be added to our project. A detailed guide for the USB API is found [1], which you may need to refer to for additional information. 
 
 
-Start by editing the **prj.conf** file. Append the following config options. These options can be found here [4], for diffrent subsystems. 
+Start by editing the **prj.conf** file. Append the following config options. These options can be found here [4], for different subsystems. 
 ```
 CONFIG_GPIO=y
 
