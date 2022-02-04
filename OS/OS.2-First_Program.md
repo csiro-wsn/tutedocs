@@ -59,27 +59,24 @@ In this course, you will be required to modify and re-use code to implement new 
 ```
 
 ## **3.0 Making A Zephyr Application**
-
-3.1 Within the 'csse4011_repo', make the following modifications to setup a sample directory
+Within the 'csse4011_repo', make the following modifications to setup a sample directory
 ```shell
-    cd ~/csse4011/csse4011_repo/
-    mkdir -p apps/sample
+cd ~/csse4011/csse4011_repo/
+mkdir -p apps/sample
 ```
-
-3.2 For the purposes of this tutorial, we will use the existing blinky sample provided in the Zephyr source code.
+For the purposes of this tutorial, we will use the existing blinky sample provided in the Zephyr source code.
 
 Start by navigating to the Zephyr source we attained in Tute 1.
 
 ```shell
-    cd ~/csse4011/zephyrproject/zephyr/samples/basic/blinky
+cd ~/csse4011/zephyrproject/zephyr/samples/basic/blinky
 ```
-3.3 Copy blinky files into our sample application directory, then navigate to sample directory.
+Copy blinky files into our sample application directory, then navigate to sample directory.
 ```shell
-    cp -R * ~/csse4011/csse4011_repo/apps/sample/
-
-    cd ~/csse4011/csse4011_repo/apps/sample/
+cp -R * ~/csse4011/csse4011_repo/apps/sample/
+cd ~/csse4011/csse4011_repo/apps/sample/
 ```
-3.4 Verify that the following exist within your sample dir
+Verify that the following exist within your sample dir
 ```
 .
 └── csse4011/csse4011_repo/apps/
@@ -91,33 +88,30 @@ Start by navigating to the Zephyr source we attained in Tute 1.
         └── src/
             └── main.c
 ```
-3.5 Add ZEPHYR_BASE to path (Lets you build from outside the Zephyr Source Dir). Append the following line to the end of 'bashrc'.
+Add ZEPHYR_BASE to path (Lets you build from outside the Zephyr Source Dir). Append the following line to the end of 'bashrc'.
 ```
-    vim ~/.bashrc                               or use any text editor
+vim ~/.bashrc                               or use any text editor
     
-    #Add Zephyr Base to PATH
-    export ZEPHYR_BASE=~/csse4011/zephyrproject/zephyr   
+#Add Zephyr Base to PATH
+export ZEPHYR_BASE=~/csse4011/zephyrproject/zephyr   
 ```
 save and exit.
 
-3.6 Read and execute bashrc (Loads ZEPHYR_BASE for current shell instance)
+Read and execute bashrc (Loads ZEPHYR_BASE for current shell instance)
 ```shell
-    source ~/.bashrc
-
-    echo $ZEPHYR_BASE
+source ~/.bashrc
+echo $ZEPHYR_BASE
 ```
 Should now display the path to zephyr base. 
 
-3.7 Build the sample application within our directory
+Build the sample application within our directory
 ```shell
-    cd ~/csse4011/csse4011_repo/apps/sample/
-
-    west build -p auto -b particle_argon
+cd ~/csse4011/csse4011_repo/apps/sample/
+west build -p auto -b particle_argon
 ```
-
-3.8 Flash and Verify that Blinky works. 
+Flash and Verify that Blinky works. 
 ```shell
-    west flash -r jlink
+west flash -r jlink
 ```
 
 The option '-r' lets you specify a runner, in this case we are using JLink to flash the Particle Argon. Make sure that the cables are connected properly.
