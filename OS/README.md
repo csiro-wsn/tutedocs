@@ -8,7 +8,7 @@ These tutorials are intended to be **attempted in order**, particularly the firs
 
 ## Topic Brief
 
-* OS.1 - Getting Started: 
+* OS.1 - Getting Started 
   * Cloning and setting up Zephyr RTOS (installing toolchains and other required packages), on Debian/Ubuntu.
   * Building and flashing sample blinky app
 * OS.2 - First Program
