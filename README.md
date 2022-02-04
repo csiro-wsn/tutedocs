@@ -1,8 +1,8 @@
-# Tutorial Documenation
+# Tutorial Documentation
 
 ## OS
 
-A set of tutorials focused on getting upto speed with Zephyr RTOS and it's featureset/implementation.
+A set of tutorials focused on getting upto speed with Zephyr RTOS and it's feature set/implementation.
 
 * Tute 1: Getting Started               ```[REVIEW]```
 * Tute 2: First program                 ```[REVIEW]```
@@ -42,3 +42,5 @@ A step-by-step guide to building Zephyr applications for the following boards, t
 * Tute 2: Thingy52                  ```[DRAFT]```
 * Tute 3: IOT Board                 ```[DRAFT]```
 
+## NOTES:
+* The following tutorials were created with **reference to Zephyr RTOS V2.7.XX**. 
