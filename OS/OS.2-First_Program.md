@@ -2,7 +2,7 @@
 
 ## 1.0 Motivation
 
-The following tutorial will focus on developing your own very first Zephyr application. This invloves, setting up an appropriate directory structure and necessary configuration files.
+The following tutorial will focus on developing your own very first Zephyr application. This involves, setting up an appropriate directory structure and necessary configuration files.
 
 ## 1.1 Hardware Required
 
