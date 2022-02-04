@@ -47,7 +47,7 @@ cd ~/csse4011/csse4011_repo/apps/gpio_sample/
 "A devicetree is a hierarchical data structure that describes hardware...Zephyr uses devicetree to describe the hardware available on its Supported Boards, as well as that hardware’s initial configuration."
 ```
 
-An extensive guide to DeviceTree (DTC) implementation can be found here [1] & [2]. Later in this course, you might need to describe hardware in a DTC overlay file and add it to the build system for Zephyr to access particular hardware that you may need to use. Adding DTC overlays has been covered in `OS.2.1-Building_Tips`. 
+An extensive guide to DeviceTree Source (DTS) implementation can be found here [1] & [2]. Later in this course, you might need to describe hardware in a DTS overlay file and add it to the build system for Zephyr to access particular hardware that you may need to use. Adding DTS overlays has been covered in `OS.2.1-Building_Tips`. 
 
 When an application is built for a particular board, Zephyr creates a final `zephyr.dts` file in the build directory. This file concatenates all selected hardware into this "final devicetree". Typically, it's a good idea to start here to see what the hardware description looks like for the current configuration of your build.
 
@@ -56,7 +56,7 @@ For instance, lets try building this boilerplate blinky app for the `Arduino_Nan
 cd ~/csse4011/csse4011_repo/apps/gpio_sample/
 west  build -p auto -b arduino_nano_33_ble
 ```
-Once the build is complete, you can open up the "final DTC" at:
+Once the build is complete, you can open up the "final DTS" at:
 ```shell
 cd build/zephyr
 vim zephyr.dts
@@ -81,7 +81,7 @@ For example,
 #define PIN     DT_GPIO_PIN(LED0_NODE, gpios)
 #define FLAGS   DT_GPIO_FLAGS(LED0_NODE, gpios)
 ```
-Here, `DT_ALIAS()` is used to find the reference `led0` within the DTC. This is a special case of using an alias. If we look in the `zephyr.dts` file, you will notice that `led0` is specified as `aliases{}`. So this macro "returns a node identifier for the node which is aliased".
+Here, `DT_ALIAS()` is used to find the reference `led0` within the DTS. This is a special case of using an alias. If we look in the `zephyr.dts` file, you will notice that `led0` is specified as `aliases{}`. So this macro "returns a node identifier for the node which is aliased".
 
 When you follow the `led0` alias in `zephyr.dts`, you will notice that it simply maps to a GPIO pin. Aliases can help abstract the hardware within the devicetree and make them easy to access. 
 
@@ -93,7 +93,7 @@ Start by editing the source file and append the following
 ```shell
 vim src/main.c
 ```
-Use `DT_NODELABEL` to get the respective node_id for for `gpio0` from DTC.
+Use `DT_NODELABEL` to get the respective node_id for for `gpio0` from DTS.
 ```
 /* DeviceTree get node ID from label */
 #define GPIO0 DT_NODELABEL(gpio0)
