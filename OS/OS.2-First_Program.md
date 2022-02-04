@@ -15,11 +15,11 @@ The following tutorial will focus on developing your own very first Zephyr appli
 **Connection guide:**
 1. Connect the Particle Argon using the micro-usb cable to your computer
 2. Connect JLink ribbon cable to the JTAG header on the Particle Argon, and the opposing end to the J-Link EDU-mini. The lip of the header should be facing away from the edu mini.
-3. Connect the JLink edu mini to your computer, and make sure that USB passthrough for this device is enabled in your vitual machine settings. 
+3. Connect the JLink edu mini to your computer, and make sure that USB passthrough for this device is enabled in your virtual machine settings. 
 
 ## 2.0 Directory Overview
 
-A typical Zephyr application is organised in the following format [1].
+A typical Zephyr application is organized in the following format [1].
 
 ```
 <home>/apps
@@ -116,7 +116,7 @@ west flash -r jlink
 
 The option '-r' lets you specify a runner, in this case we are using JLink to flash the Particle Argon. Make sure that the cables are connected properly.
 
-If flashing fails, refer to the end of tute 1 and follow instructions for installing runners / additional runners. 
+If flashing fails, refer to the end of `OS.1-Getting Started` and follow instructions for installing runners / additional runners. 
 
 
 ## **4.0 Sample**

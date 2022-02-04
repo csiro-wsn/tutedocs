@@ -49,7 +49,7 @@ For setting up a basic boilerplate for our application, we will use the provided
 
 ### **2.2 Enable USB Drivers [prj.conf]**
 
-To show a more structure approach to setting configs in Zephyr, in this tutorials we will explore the addition of segmented config files to the build system. Where eachfile represents a different subsystem. Such an approach improves modularity for bigger projects. 
+To show a more structure approach to setting configs in Zephyr, in this tutorials we will explore the addition of segmented config files to the build system. Where each file represents a different subsystem. Such an approach improves modularity for bigger projects. 
 
 
 First, we will enable the USB subsystem as before, 

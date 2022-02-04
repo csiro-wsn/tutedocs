@@ -2,7 +2,7 @@
 
 ## **1.0 Zephyr RTOS: Overview**
 
-Zephyr Real-Time Operating System (RTOS) managed by the Linux foundation, is designed for connected and resource constrained embedded devices. Unlike many other real-time operating systems (like free-RTOS), Zephyr is more than just a kernel, it is a software eco-system. Zephyr inegrates a broad range of functionality such as:
+Zephyr Real-Time Operating System (RTOS) managed by the Linux foundation, is designed for connected and resource constrained embedded devices. Unlike many other real-time operating systems (like free-RTOS), Zephyr is more than just a kernel, it is a software eco-system. Zephyr integrates a broad range of functionality such as:
 
 1. Bluetooth
 2. LoRaWan
@@ -16,7 +16,7 @@ and more... Depending on what particular feature your application might require,
 
 ## **1.1 Zephyr Kernel Overview**
 
-The Zephyr kernel is similar to that of free-RTOS at a high level, in that it is primarilly concerned with task-scheduling, inter-task communication and synchronization. 
+The Zephyr kernel is similar to that of free-RTOS at a high level, in that it is primarily concerned with task-scheduling, inter-task communication and synchronization. 
 
 1. Zephyr offers a pre-emptive scheduler, that is, the code context can change at anytime. 
 2. Thread based, where 'threads' mean the same thing as a 'task' in free-RTOS. 
@@ -29,14 +29,14 @@ Zephyr includes a command line tool named west. This tool provides a multiple re
 ```shell
 west build
 ```
-This will look at predefined build configuartion settings and build an application as specified. The west meta-tool can be used to perform many other functions, see [3] for a detailed breakdown of it's features. In this course, you will be using west to build, flash and maintain your workspaces. 
+This will look at predefined build configuration settings and build an application as specified. The west meta-tool can be used to perform many other functions, see [3] for a detailed breakdown of it's features. In this course, you will be using west to build, flash and maintain your workspaces. 
 
 
 ## **1.3 Zephyr Documentation**
 The Zephyr documentation is well written and contains all the intricate details about Zephyr and it's features. Throughout this course and application development, you will need to refer back to these documentation to understand;
 
 1. The Build and Configuration Systems                              [4]
-2. Device Tree (A way of describring hardware config to the OS)     [7]
+2. Device Tree (A way of describing hardware config to the OS)      [7]
 3. Application Development (App config options/Kernel config)       [6]
 4. API Usage                                                        [8]
 5. Using an Interactive Kconfig interfaces (Optional)               [5]
@@ -45,7 +45,7 @@ Take some time to read through these documents to get an idea of how Zephyr is i
 
 ## **2.0 Installing Zephyr RTOS**
 
-The following guide is made in reference to the Zephyr "Getting Started Guide" documentation [1], and is intended to be used on a Debian based linux distribution with the **"apt"** (package mananger installed). 
+The following guide is made in reference to the Zephyr "Getting Started Guide" documentation [1], and is intended to be used on a Debian based linux distribution with the **"apt"** (package manager installed). 
 
 First update the system and any installed packages on your VM
 ```shell
@@ -142,7 +142,7 @@ sudo udevadm control --reload
 
 ## **5.0 Build a Sample Program (Blinky)**
 
-If the installation was successful, we should now be able to build a basic blinkly program. In the following command, the '-p auto' option automatically cleans byproducts from a previous build if necessary, which is useful if you try building another sample.
+If the installation was successful, we should now be able to build a basic blinky program. In the following command, the '-p auto' option automatically cleans byproducts from a previous build if necessary, which is useful if you try building another sample.
 
 The '-b' option specifies a board to build for, in this case the particle_boron, followed by the path to source.
 ```shell

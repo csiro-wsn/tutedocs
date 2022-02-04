@@ -4,7 +4,7 @@
 
 The following tutorial looks at implementing a simple library and adding library files to the build system. 
 
-## **2.0 Implenting A Basic Library**
+## **2.0 Implementing A Basic Library**
 
 ## **2.1 Including library files**
 
