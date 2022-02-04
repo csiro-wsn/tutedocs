@@ -6,7 +6,7 @@ The following tutorial looks at implementing a simple library and adding library
 
 ## **2.0 Implenting A Basic Library**
 
-## 2.1 Including library files
+## **2.1 Including library files**
 
 We will build on the blinky sample that was created in *OS.2-First_Program*. We will start by creating a library file to implement functions that will:
 > Initialize GPIO for led
@@ -32,7 +32,7 @@ The following directory structure will be implemented for this basic library app
 │       ├── led_driver.c
 │       └── led_driver.h
 ```
-## 2.2 Library Files
+## **2.2 Library Files**
 
 In this example, the library files are in *lib/led_driver/*, where:
 > led_driver.c - provides simple led wrapper functions to demonstrate a library implementation.
@@ -40,7 +40,7 @@ In this example, the library files are in *lib/led_driver/*, where:
 
 > led_driver.h - provides the respective header file to be included by any shared targets. 
 
-### 2.2.1 Creating a library source file (led_driver.c)
+### **2.2.1 Creating a library source file (led_driver.c)**
 
 First include necessary Zephyr headers files required by the application, in this case, for an led to toggle, we use. 
 
@@ -55,7 +55,7 @@ First include necessary Zephyr headers files required by the application, in thi
 ```
 This can be followed by any source code required to implement the application/driver logic. 
 
-### 2.2.2 Creating a library header file (led_driver.h)
+### **2.2.2 Creating a library header file (led_driver.h)**
 
 The header file can be made as per usual using typical syntax. There are no particular restrictions on the way this is implemented. 
 
@@ -73,7 +73,7 @@ int led0_init(void);
 #endif
 ```
 
-## 2.3 Adding Sources and Header files to CMakeLists
+## **2.3 Adding Sources and Header files to CMakeLists**
 
 With this, you can now created a basic library to implement re-usable code. However, to add this to the build system of this intended application. You must add these files to the CMakeLists file of the target application. In this case the following file  *blinky_tute_ext/CMakeLists.txt*
 
@@ -100,11 +100,11 @@ target_sources(app PRIVATE
 
 **CMakeLists documentation states that:** The include directories are added to the directory property INCLUDE_DIRECTORIES for the current CMakeLists file. They are also added to the target property INCLUDE_DIRECTORIES for each target in the current CMakeLists file. The target property values are the ones used by the generators.
 
-You can also use a seperate CMakeLists files to compile your libraries using a hierachical cmake build system if desired. Refer to cmake build system documentation for more [3].
+You can also use a seperate CMakeLists files to compile your libraries using a hierarchical cmake build system if desired. Refer to cmake build system documentation for more [3].
 
-## 2.4 Using Library Code in Target Application
+## **2.4 Using Library Code in Target Application**
 
-Finally, we can now use the libray code within our target application. To do this, include the respective header files. In this case, include the following in *src/main.c*
+Finally, we can now use the library code within our target application. To do this, include the respective header files. In this case, include the following in *src/main.c*
 
 ```
 /* Include file from our library */
@@ -140,7 +140,7 @@ and flashed with
 
 > west flash -r 'runner'
 
-Refer to the board flasing tutorials for additional build/flash guides.
+Refer to the board flashing tutorials for additional build/flash guides.
 
 
 # Links

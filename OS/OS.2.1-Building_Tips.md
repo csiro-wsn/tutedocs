@@ -8,7 +8,7 @@ This tutorial will focus on modifications to the CMakeLists file to streamline t
 
 Note that these should be added to the top of the CMakeLists file. Additionally, there are other ways to include config files and devicetree overlays. Refer to a application development [2] and device tree guides [3] for more.
 
-## 2.1 Boards
+### **2.1 Boards**
 
  A board to develop can be specified within the top level CMakeLists file as below, the particular name for the board can be found under *Zephyr Supported Boards -> boardname* [1].
 
@@ -26,7 +26,7 @@ west build
 
 an application can be created for the particle_argon.
 
-## 2.2 Runners
+### **2.2 Runners**
 
 The flash runner for the board can be set using the below, within the CMakeLists file.
 
@@ -42,7 +42,7 @@ This allows for west flash to be ran with about specifying the '-r runner' when 
 west flash
 ```
 
-## 2.3 Config Files
+### **2.3 Config Files**
 
 Config option files (ending with .conf), can be added to the CMakeLists file using,
 
@@ -52,7 +52,7 @@ set(CONF_FILE files.conf)
 set(CONF_FILE general_config.conf usb_config.conf uart_shell_config.conf)
 ```
 
-## 2.4 Devicetree overlays
+### **2.4 Devicetree overlays**
 
 Devicetree overlay files can be added to the build system using,
 
