@@ -18,7 +18,7 @@ Ensure that you have completed/understand the following tutorials.
 
 ### **2.1 Data Passing in Zephyr**
 
-Zephyr RTOS (as of V2.7.XX) offers a few differents options for ITC. To name a few,
+Zephyr RTOS (as of V2.7.XX) offers a few different options for ITC. To name a few,
 * First in first out buffers (FIFO)
 * Last in first out buffer (LIFO)
 * Stacks
@@ -47,7 +47,7 @@ The following macro allows for the definition of a message queue in Zephyr, add 
 ```
 K_MSGQ_DEFINE(my_msgq, sizeof(struct data_packet), 10, 4);
 ```
-Where, a message queue named *my_msgq* is initialized, that queues *10* struct *data_packet* items, where the structure is alinged to an address that is divisible by 4 (4-byte aligned). 
+Where, a message queue named *my_msgq* is initialized, that queues *10* struct *data_packet* items, where the structure is aligned to an address that is divisible by 4 (4-byte aligned). 
 
 To make this work, we must also define a struct *data_packet* globally (before macro usage).
 ```
