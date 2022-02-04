@@ -32,5 +32,7 @@ These tutorials are intended to be **attempted in order**, particularly the firs
   * Basic communication primitives
   * Implementation of Zephyr message queues.
 
-## NOTE:
-The following tutorials were created with **reference to Zephyr RTOS V2.7.XX**. 
+## NOTES:
+* The following tutorials were created with **reference to Zephyr RTOS V2.7.XX**. 
+
+* Through these guide, the reference to the environment variable **`(REPO_TOP)`** refers to the top level directory of within tutedocs. 
