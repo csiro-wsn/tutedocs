@@ -19,6 +19,11 @@ The following set of tutorial aim to expose aspects of Zephyr RTOS and handle co
   * Use of kernel config files
   * Specify hardware usage using device tree overlays
 
+* CN.4 - Shell Commands
+  * Building on CN.4 to add shell commands
+  * Commands that can execute a particular subroutine
+  * Exposing the Zephyr Shell Command API
+
 * CN.5 - Logging
   * Expose Zephyr Logging sub-system
   * Setup Shell as Logging backend
