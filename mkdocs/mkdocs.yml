@@ -1,7 +1,7 @@
 site_name: CSSE4011 Tutorial Docs
-site_url: https://example.com
+site_url: https://github.com/thulithwilfred/csse4011_documentation
 nav:
-  - Summary: about.md
+  - Contents: about.md
   - Operating System: 
       - 'Overview' : OS/about.md
       - 'Getting Started': OS/OS.1-Getting_Started.md
@@ -41,4 +41,4 @@ markdown_extensions:
         permalink: '#'
 
 extra:
-    version: 0.5.1
+    version: 0.5.2

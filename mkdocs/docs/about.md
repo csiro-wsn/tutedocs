@@ -43,5 +43,5 @@ A step-by-step guide to building Zephyr applications for the following boards, t
 * Tute 2: Thingy52                  ```[DRAFT]```
 * Tute 3: IOT Board                 ```[DRAFT]```
 
-## NOTES:
+## Notes
 * The following tutorials were created with **reference to Zephyr RTOS V2.7.XX**. 
