@@ -1,112 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://example.com/</loc>
+         <loc>https://github.com/csiro-wsn/tutedocs/</loc>
          <lastmod>2022-02-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/about/</loc>
+         <loc>https://github.com/csiro-wsn/tutedocs/about/</loc>
          <lastmod>2022-02-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/Boards/BRD.1-Arduino_Sense/</loc>
+         <loc>https://github.com/csiro-wsn/tutedocs/Boards/BRD.1-Arduino_Sense/</loc>
          <lastmod>2022-02-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/Boards/BRD.2-Thingy52/</loc>
+         <loc>https://github.com/csiro-wsn/tutedocs/Boards/BRD.2-Thingy52/</loc>
          <lastmod>2022-02-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/Boards/BRD.3-Dongle_NRF52840/</loc>
+         <loc>https://github.com/csiro-wsn/tutedocs/Boards/BRD.3-Dongle_NRF52840/</loc>
          <lastmod>2022-02-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/Boards/about/</loc>
+         <loc>https://github.com/csiro-wsn/tutedocs/Boards/about/</loc>
          <lastmod>2022-02-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/Connectivity/CN.1-GPIO/</loc>
+         <loc>https://github.com/csiro-wsn/tutedocs/Connectivity/CN.1-GPIO/</loc>
          <lastmod>2022-02-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/Connectivity/CN.2-Sensors/</loc>
+         <loc>https://github.com/csiro-wsn/tutedocs/Connectivity/CN.2-Sensors/</loc>
          <lastmod>2022-02-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/Connectivity/CN.3-Serial_Console/</loc>
+         <loc>https://github.com/csiro-wsn/tutedocs/Connectivity/CN.3-Serial_Console/</loc>
          <lastmod>2022-02-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/Connectivity/CN.4-Shell/</loc>
+         <loc>https://github.com/csiro-wsn/tutedocs/Connectivity/CN.4-Shell/</loc>
          <lastmod>2022-02-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/Connectivity/CN.4.1-Shell_Commands/</loc>
+         <loc>https://github.com/csiro-wsn/tutedocs/Connectivity/CN.4.1-Shell_Commands/</loc>
          <lastmod>2022-02-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/Connectivity/CN.5-Logging/</loc>
+         <loc>https://github.com/csiro-wsn/tutedocs/Connectivity/CN.5-Logging/</loc>
          <lastmod>2022-02-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/Connectivity/CN.6-Segger_RTT/</loc>
+         <loc>https://github.com/csiro-wsn/tutedocs/Connectivity/CN.6-Segger_RTT/</loc>
          <lastmod>2022-02-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/Connectivity/about/</loc>
+         <loc>https://github.com/csiro-wsn/tutedocs/Connectivity/about/</loc>
          <lastmod>2022-02-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/OS/OS.1-Getting_Started/</loc>
+         <loc>https://github.com/csiro-wsn/tutedocs/OS/OS.1-Getting_Started/</loc>
          <lastmod>2022-02-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/OS/OS.2-First_Program/</loc>
+         <loc>https://github.com/csiro-wsn/tutedocs/OS/OS.2-First_Program/</loc>
          <lastmod>2022-02-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/OS/OS.2.1-Building_Tips/</loc>
+         <loc>https://github.com/csiro-wsn/tutedocs/OS/OS.2.1-Building_Tips/</loc>
          <lastmod>2022-02-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/OS/OS.2.2-Implementing_Libraries/</loc>
+         <loc>https://github.com/csiro-wsn/tutedocs/OS/OS.2.2-Implementing_Libraries/</loc>
          <lastmod>2022-02-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/OS/OS.4-Threading/</loc>
+         <loc>https://github.com/csiro-wsn/tutedocs/OS/OS.4-Threading/</loc>
          <lastmod>2022-02-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/OS/OS.5.1-Thread_Sync/</loc>
+         <loc>https://github.com/csiro-wsn/tutedocs/OS/OS.5.1-Thread_Sync/</loc>
          <lastmod>2022-02-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/OS/OS.5.2-Thread_Communication/</loc>
+         <loc>https://github.com/csiro-wsn/tutedocs/OS/OS.5.2-Thread_Communication/</loc>
          <lastmod>2022-02-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/OS/about/</loc>
+         <loc>https://github.com/csiro-wsn/tutedocs/OS/about/</loc>
          <lastmod>2022-02-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
