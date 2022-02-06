@@ -25,6 +25,7 @@ A set of tutorials that expose connectivity / I/O features of Zephyr RTOS
 * Tute 4: Shell                       ```[REVIEW]```
   * Tute 4.1: Shell Commands          ```[REVIEW]```
 * Tute 5: Logging                     ```[REVIEW]```
+* Tute 6: Segger RTT                     ```[REVIEW]```
 
 ## Networking
 

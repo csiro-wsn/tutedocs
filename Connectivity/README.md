@@ -28,3 +28,7 @@ The following set of tutorial aim to expose aspects of Zephyr RTOS and handle co
   * Expose Zephyr Logging sub-system
   * Setup Shell as Logging backend
   * Setup log modules and log filtering
+
+* CN.6 - Using SEGGER RTT
+  * Using a Shell through RTT
+  * Using a Console through RTT
