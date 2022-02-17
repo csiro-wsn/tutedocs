@@ -1,5 +1,12 @@
 # Tutorial Documentation
 
+## NOTE!
+
+This repo is out of date and deprecated, the most upto date material has been moved to 
+```
+https://github.com/uqembeddedsys-projects/csse4011_zephyr_guides
+```
+
 ## OS
 
 A set of tutorials focused on getting upto speed with Zephyr RTOS and it's feature set/implementation.
